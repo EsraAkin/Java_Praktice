@@ -23,6 +23,7 @@ public class C08_nestedIf {
 
         }else{
             System.out.println("Lütfen "+ (18-age)+" yıl sonra tekrar gel.");
+            System.out.println("v2");
         }
 
     }
