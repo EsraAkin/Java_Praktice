@@ -52,11 +52,15 @@ public class Odev_5Hak {
                 }else {
                     tahminDogrumu=true;
                     System.out.println("Tebrikler doğru tahmin!");
-                    System.out.println("Deneme sayısı: "+denemeSayisi);
+                    System.out.println(denemeSayisi+". denemede bildiniz.");
 
                 }
 
             }while((!tahminDogrumu)&&(denemeSayisi<5));  //Döngü doğru tahmin yapılıncaya kadar devam edecek.
+if(!tahminDogrumu){
+    System.out.println("Maalesef bilemediniz. Oyunu baştan başlatıp tekrar deneyiniz.");
+}
+
             scanner.close();
 
 
