@@ -12,7 +12,7 @@ public class C01_switch {
 
 
         //2.adım normal koşullarda kullanıcıya bilgi verirdik
-        System.out.println("Lütfen işlem yapmak istediğiniz operatoru giriniz : \ntoplama icin : +\ncıkarma icin : -\ncarpma icin : *\nbolme icin : /\nus almak icin : ^\nkalan hesaplama icin : %");
+        System.out.println("Lütfen işlem yapmak istediğiniz operatoru giriniz : \ntoplama icin : +\ncıkarma icin : -\ncarpma icin : *\nbolme icin : /\nus almak icin : ^\nkalan hesaplama icin : %:^\nfaktoriyel hesaplama icin : !");
 
 
         //3.adım uygun bir variable'a atamak
@@ -57,6 +57,26 @@ public class C01_switch {
                     System.out.println("sonuc : "+sonuc);
                 }
                 break;
+
+            case'!':
+
+                System.out.println("Lütfen 10'dan kucuk bir tam sayi giriniz");
+                byte sayi= input.nextByte();
+                if (sayi<10&&sayi>0){
+                    int bosInt=1;
+                    for (int i = 1; i <=sayi ; i++) {
+                        bosInt*=i;//bosInt=bosInt * i;
+                    }
+                    System.out.println(sayi+"! = "+bosInt);
+                }else {
+                    System.out.println("Lütfen gecerli bir deger giriniz!!!");
+                }
+break;
+
+
+
+
+
             default:
                 System.out.println("Lütfen gecerli bir operator giriniz ☺");
                 break;

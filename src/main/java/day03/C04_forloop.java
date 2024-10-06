@@ -22,7 +22,5 @@ public class C04_forloop {
             System.out.println();
         }
 
-
-
     }
 }
